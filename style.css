@@ -1,0 +1,168 @@
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; 
+  padding: 0; 
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.gradient-background {
+  background: linear-gradient(300deg, #221087, #971ecb, #29a4b2);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3c1694;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  /*text-align:center;*/
+  padding: 1rem 2rem;
+  display: block;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+a[home] li  {
+  display: block;
+  color: white;
+  /*text-align:center;*/
+  padding: 1rem 2rem;
+  padding-left: 0;
+  margin-left: 0;
+  display: block;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #421aa2;
+  color: white;
+  font-size: 1.1rem;
+}
+.container-fluid {
+  margin-left: 0;
+  padding-left: 0;
+}
+.my-image {
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.blue {
+  color: #3795bd;
+}
+.black {
+  color: black;
+}
+.white {
+  color: white;
+  font-family: serif;
+  height: 5;
+}
+.flex-item {
+  flex: 1 1 50%; /* Grow, shrink, and basis set to 50% */
+  margin-left: 35px;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  padding-top: 1rem;
+}
+li {
+  margin-top: 5px;
+}
+
+.education,
+.skills,
+.experience,
+.workshops {
+  margin-bottom: 20px;
+}
+
+.education ul,
+.skills ul,
+.workshops ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skills ul ul,
+.workshops ul {
+  padding-left: 20px;
+}
+
+#header {
+  background: url(./assets/images/header-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin-top: 0;
+  padding-top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#header h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 7rem;
+}
+#header p {
+  font-size: 1.5rem;
+}
+
+.hero {
+  background-color: #610fc5;
+}
+#contact-me {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 45px;
+}
+#contact-me h1 {
+  size: 100px;
+}
+#contact-me p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
